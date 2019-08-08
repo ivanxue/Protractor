@@ -26,5 +26,4 @@ steps:
   inputs:
     testResultsFormat: 'JUnit'
     testResultsFiles: 'xmlresults.xml'
-    searchFolder: 'target/'
-  displayName: 'PublishTestResults'
+    searchFolder: '$(System.DefaultWorkingDirectory)/target/'
