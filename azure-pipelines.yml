@@ -17,6 +17,6 @@ steps:
 
 - script: |
     npm install
-    npm run webdriver-update
+    # npm run webdriver-update
     npm run test
   displayName: 'npm install and run test'
