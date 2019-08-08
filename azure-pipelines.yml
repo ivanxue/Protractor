@@ -19,6 +19,7 @@ steps:
     npm install -g protractor
     npm install
     npm run webdriver-update
+    dir
     protractor config.js
   displayName: 'npm install and run test'
 
