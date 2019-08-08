@@ -19,4 +19,9 @@ steps:
     npm install
     npm run webdriver-update
     npm run test
+    - task: PublishTestResults@2
+      inputs:
+        testResultsFormat: 'JUnit'
+        testResultsFiles: 'xmlresults.xml'
+        searchFolder: '$(System.DefaultWorkingDirectory)/target'
   displayName: 'npm install and run test'
