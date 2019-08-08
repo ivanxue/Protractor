@@ -10,8 +10,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "webdriver-update": "./node_modules/protractor/node_modules/webdriver-manager/bin/webdriver-manager update"
-    "webdriver-start": "./node_modules/protractor/node_modules/webdriver-manager/bin/webdriver-manager start"
+    "webdriver-update": "./node_modules/protractor/node_modules/webdriver-manager/bin/webdriver-manager update",
+    "webdriver-start": "./node_modules/protractor/node_modules/webdriver-manager/bin/webdriver-manager start",
     "test": "./node_modules/protractor/bin/protractor config.js"
   },
   "repository": {
