@@ -16,12 +16,15 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
+    npm install -g protractor
     npm install
     npm run webdriver-update
-    npm run test
-    - task: PublishTestResults@2
-      inputs:
-        testResultsFormat: 'JUnit'
-        testResultsFiles: 'xmlresults.xml'
-        searchFolder: '$(System.DefaultWorkingDirectory)/target'
+    protractor config.js
   displayName: 'npm install and run test'
+
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: 'xmlresults.xml'
+    searchFolder: '$(System.DefaultWorkingDirectory)/target'
+  displayName: 'PublishTestResults'
