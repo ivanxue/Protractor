@@ -16,7 +16,8 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
+    sudo apt-get update
     npm install
-    # npm run webdriver-update
+    npm run webdriver-update
     npm run test
   displayName: 'npm install and run test'
