@@ -18,5 +18,6 @@ steps:
 - script: |
     npm install -g protractor
     npm install
+    webdriver-manager start
     protractor config.js
   displayName: 'npm install and build'
