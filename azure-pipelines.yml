@@ -19,5 +19,5 @@ steps:
     npm install
     ./node_modules/protractor/node_modules/webdriver-manager/bin/webdriver-manager update
     # ./node_modules/protractor/node_modules/webdriver-manager/bin/webdriver-manager start
-    ./node_modules/protractor/node_modules/protractor/bin/protractor config.js
+    ./node_modules/protractor/bin/protractor config.js
   displayName: 'npm install and run test'
