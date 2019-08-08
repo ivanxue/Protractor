@@ -16,7 +16,6 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-    sudo apt-get install google-chrome-stable
     npm install
     npm run webdriver-update
     npm run test
